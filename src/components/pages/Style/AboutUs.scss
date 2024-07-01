@@ -1,0 +1,128 @@
+.about-us{
+  padding-bottom: 50px;
+  .cover-page{
+    background-image: url(../../../../public/imgs/coverBlog.jpg);
+    height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    .details{
+      position: absolute;
+      left: 18%;
+      top: 70%;
+      transform: translate(-18%, -70%);
+      @media (max-width: 768px) {
+        left: 50%;
+        transform: translate(-50%, -70%);
+      }
+      h2{
+        font-size: 2.8rem;
+        font-weight: 700;
+        margin-bottom: 20px;
+      }
+      .link-page{
+        font-size: 17px;
+        a{
+          color: #221638;
+          font-weight: 600;
+          text-decoration: none;
+          transition: all .6s;
+          &:hover{
+            color: #ff5d22;
+          }
+        }
+        .i{
+          color: #ff5d22;
+          margin: 0 10px;
+          font-size: 14px;
+        }
+        span{
+          font-weight: 600;
+          color: #221638;
+        }
+      }
+    }
+  }
+  .ser1{
+    padding: 100px 0;
+    .case-cover{
+      position: relative;
+  
+      .details1{
+        margin-bottom: 50px;
+        text-align: center;
+        .logo{
+          img{
+            animation: scales 40s infinite;
+            margin-right: 5px;
+          }
+          span{
+            color: #ff5d22;
+            font-size: 17px;
+            font-weight: 600;
+          }
+        }
+        h2{
+          font-size: 44px;
+          font-weight: 700;
+          margin: 0 auto 15px;
+          color: #221638;
+          @media (max-width: 768px) {
+            width: 100%;
+          }
+          @media (max-width: 500px) {
+            font-size: 30px;
+          }
+          @media (max-width: 450px) {
+            font-size: 20px;
+          }
+        }
+        p{
+          color: #6b6b84;
+          font-size: 17px;
+          margin: 5px auto;
+          width: 600px;
+          @media (max-width: 768px) {
+            width: 100%;
+          }
+          @media (max-width: 500px) {
+            font-size: 15px;
+          }
+          @media (max-width: 450px) {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+    .service-container{
+      padding-top: 100px;
+      text-align: center;
+      .ser-item{
+        margin: 30px 0;
+        border: 1px solid #f5f3f2;
+        background-color: #fff;
+        border-radius: 5px;
+        padding: 50px 20px;
+        transition: all .5s;
+        img{
+          margin-bottom: 20px;
+        }
+        .service-details{
+          h3{
+            font-size: 24px;
+            margin-bottom: 12px;
+          }
+          p{
+            font-size: 17px;
+            line-height: 1.8;
+            color: #6b6b84;
+            font-weight: 500;
+          }
+        }
+        &:hover{
+          border:  1px solid#ff5d22;
+        }
+      }
+    }
+  }
+}

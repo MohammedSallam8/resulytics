@@ -1,0 +1,189 @@
+.main-service{
+  .items{
+    background-color: #200e36;
+    color: #fff;
+    padding: 100px 0;
+    .container{
+      text-align: center;
+      .row{
+        .item-content{
+          display: flex;
+          justify-content: space-between;
+          margin: 20px 0;
+          @media (max-width: 768px) {
+            display: block;
+          }
+          .item-icon{
+            flex: .2 1;
+            img{
+              margin: 5px 0;
+            }
+          }
+          .item-details{
+            flex: .75 1;
+            z-index: 10;
+            h3{
+              margin-bottom: 3px;
+              font-size: 28px;
+              font-weight: 700;
+              @media (max-width: 305px) {
+                font-size: 20px;
+              }
+            }
+            p{
+              margin: 5px 0;
+              color: #a6a6b4;
+              font-size: 17px;
+              font-weight: 600;
+              @media (max-width: 305px) {
+                font-size: 12px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .main-service-content{
+    padding: 100px 0;
+    .container{
+      .row{
+        .title{
+          text-align: center;
+          margin-bottom: 50px;
+  
+          h2{
+            font-size: 44px;
+            font-weight: 700;
+            color: #221638;
+            @media (max-width: 500px) {
+              font-size: 30px;
+            }
+            @media (max-width: 450px) {
+              font-size: 20px;
+            }
+          }
+          p{
+            font-size: 18px;
+            font-weight: 500;
+            color: #6b6b84;
+            line-height: 1.5;
+            width: 600px;
+            margin: 12px auto;
+            @media (max-width: 1024px) {
+                  width: 500px;
+              }
+              @media (max-width: 768px) {
+                width: 100%;
+                font-weight: 400;
+              }
+            @media (max-width: 500px) {
+              font-size: 15px;
+            }
+            @media (max-width: 450px) {
+              font-size: 12px;
+            }
+          }
+        }
+        .service-item {
+          margin: 20px 0;
+          
+          @media (max-width: 768px) {
+            text-align: center;
+          }
+          .item{
+            background-color: #fafafb;
+            padding: 90px 35px 70px;
+            transform: skewY(-8deg);
+            .img{
+              position: absolute;
+              top: 0;
+              right: 0;
+              width: 200px;
+            }
+  
+            .icon {
+              transform: skewY(8deg);
+              width: 90px;
+              height: 90px;
+              line-height: 90px;
+              text-align: center;
+              border-radius: 5px;
+              @media (max-width: 768px) {
+                margin: 10px auto;
+              }
+            }
+            .icon-1{
+              background-color: #80c54d;
+            }
+            .icon-2{
+              background-color: #4267d1;
+            }
+            .icon-3{
+              background-color: #ca8220;
+            }
+            .icon-4{
+              background-color: #b92fb1;
+            }
+            .icon-5{
+              background-color: #de6742;
+            }
+            .icon-6{
+              background-color: #59eed0;
+            }
+            .text{
+              transform: skewY(8deg);
+              h3{
+                margin: 30px 0 15px;
+                font-size: 25px;
+                font-weight: 700;
+                cursor: pointer;
+                transition: all .6s;
+                @media (max-width: 450px) {
+                  font-size: 10px;
+                }
+    
+                &:hover{
+                  color: #ff5d22;
+                }
+              }
+              p{
+                color: #6b6b84;
+                line-height: 1.8;
+                font-size: 18px;
+                font-weight: 450;
+                @media (max-width: 450px) {
+                  font-size: 10px;
+                }
+              }
+              .link-item {
+                font-size: 18px;
+                font-weight: 500;
+                color: #ff5d22;
+                text-decoration: none;
+                position: relative;
+                &:hover{
+                  color: #000;
+                }
+                &:hover .i{
+                  display: none;
+                }
+                &:hover .i1{
+                  display: inline;
+                }
+    
+                .i, .i1{
+                  font-size: 15px;
+                  transition: all .5s;
+                }
+                .i1{
+                  display: none;
+                }
+              }
+            }
+          }
+        }
+      }
+    }  
+  }
+}  

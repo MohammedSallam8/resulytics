@@ -1,0 +1,143 @@
+.main-business{
+
+  .container{
+
+    .row{
+
+      .title{
+        text-align: center;
+
+        h2{
+          font-size: 44px;
+          font-weight: 700;
+          width: 60%;
+          margin: 0 auto 15px;
+          color: #221638;
+          @media (max-width: 768px) {
+            width: 100%;
+          }
+          @media (max-width: 500px) {
+            font-size: 30px;
+          }
+          @media (max-width: 450px) {
+            font-size: 20px;
+          }
+        }
+        p{
+          color: #6b6b84;
+          font-size: 17px;
+          width: 50%;
+          margin: 5px auto;
+          @media (max-width: 768px) {
+            width: 100%;
+            @media (max-width: 500px) {
+              font-size: 15px;
+            }
+            @media (max-width: 450px) {
+              font-size: 12px;
+            }
+          }
+        }
+      }
+      .item {
+        margin: 35px 0;
+        
+        @media (max-width: 768px) {
+          text-align: center;
+        }
+
+        &:hover .icon{
+          background-color: #221638;
+        }
+
+        .icon {
+          padding: 10px;
+          color: #fff;
+          width: 80px;
+          height: 80px;
+          border-radius: 10px;
+          transition: all .6s;
+          margin-bottom: 20px;
+          display: flex;
+          align-items: center;justify-content: center;
+          @media (max-width: 768px) {
+            margin: 10px auto;
+          }
+
+          .i{
+            font-size: 40px;
+          }
+        }
+        .text{
+          margin: 10px 0;
+          h3{
+            cursor: pointer;
+            color: #221638;
+            transition: all .6s;
+            font-size: 25px;
+            font-weight: 700;
+            line-height: 1.8;
+            @media (max-width: 450px) {
+              font-size: 10px;
+            }
+
+            &:hover{
+              color: #ff5d22;
+            }
+          }
+          p{
+            color: #6b6b84;
+            font-size: 17px;
+            line-height: 1.8;
+            @media (max-width: 450px) {
+              font-size: 10px;
+            }
+          }
+          .link-item {
+            font-size: 18px;
+            font-weight: 500;
+            color: #ff5d22;
+            text-decoration: none;
+            position: relative;
+            &:hover{
+              color: #000;
+            }
+            &:hover .i{
+              display: none;
+            }
+            &:hover .i1{
+              display: inline;
+            }
+
+            .i, .i1{
+              font-size: 15px;
+              transition: all .5s;
+            }
+            .i1{
+              display: none;
+            }
+          }
+        }
+      }
+      .item-1 {
+        margin-top: 60px;
+
+        .icon {
+          background-color: #ff5d22;
+        }
+      }
+      .item-2 {
+        margin-top: 40px;
+        .icon{
+          background-color: #01b882;
+        }
+      }
+      .item-3 {
+        margin-top: 20px;
+        .icon{
+          background-color: #bb005c;
+        }
+      }
+    }
+  }
+}

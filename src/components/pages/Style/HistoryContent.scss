@@ -1,0 +1,102 @@
+.history-content{
+    padding: 100px 0;
+    background-color: #fafafb;
+    margin-bottom: 50px;
+    .title{
+      margin-bottom: 50px;
+      text-align: center;
+      .logo{
+        img{
+          animation: scales 40s infinite;
+          margin-right: 5px;
+        }
+        span{
+          color: #ff5d22;
+          font-size: 17px;
+          font-weight: 600;
+        }
+      }
+      h2{
+        font-size: 44px;
+        font-weight: 700;
+        margin: 0 auto 15px;
+        color: #221638;
+        @media (max-width: 768px) {
+          width: 100%;
+        }
+        @media (max-width: 500px) {
+          font-size: 30px;
+        }
+        @media (max-width: 450px) {
+          font-size: 20px;
+        }
+      }
+      p{
+        color: #6b6b84;
+        font-size: 17px;
+        margin: 5px auto;
+        width: 600px;
+        @media (max-width: 1024px) {
+          width: 500px;
+        }
+        @media (max-width: 768px) {
+          width: 100%;
+        }
+        @media (max-width: 500px) {
+          font-size: 15px;
+        }
+        @media (max-width: 450px) {
+          font-size: 10px;
+        }
+      }
+    }
+    .item
+    {
+        background-color: #FFFFFF;
+        margin-bottom: 30px;
+        padding: 30px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        @media  (max-width: 768px){
+            display: block;
+        }
+        .item-details
+        {
+            flex: .65;
+            padding: 0 5px 0 15px;
+            margin-top: 85px;
+            @media  (max-width: 768px){
+                flex: 1;
+                margin-bottom: 15px;
+                padding: 0;
+            }
+            h3{
+                font-size: 25px;
+                margin-bottom: 15px;
+                font-weight: 700;
+            }
+            p{
+                color: #6b6b84;
+                line-height: 1.8;
+                font-size: 17px;
+                font-weight: 600;
+                width: 80%;
+                @media  (max-width: 768px){
+                    width: 100%;
+                }
+            }
+        }
+        .item-img{
+            flex: .35;
+            display: flex;
+            align-items: center;
+            @media  (max-width: 768px){
+                flex: 1;
+            }
+            img{
+                width: 100%;
+            }
+        }
+    }
+}

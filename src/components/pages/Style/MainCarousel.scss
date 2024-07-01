@@ -1,0 +1,78 @@
+.main-carousel{
+  padding: 100px 0;
+  background-color: #fffbf5;
+  .container{
+    .carousel-items{
+      display: flex;
+      justify-content: space-between;
+      @media (max-width: 768px) {
+        display: block;
+        text-align: center;
+      }
+      .carousel-details{
+        flex: .5 1;
+        .logo{
+          margin-bottom: 20px;
+          img{
+            animation: scales 40s infinite;
+            margin-right: 5px;
+          }
+          span{
+            color: #ff5d22;
+            font-size: 15px;
+            font-weight: 600;
+          }
+        }
+        .title{
+          margin-bottom: 50px;
+          h2{
+            font-size: 44px;
+            font-weight: 700;
+            color: #221638;
+            @media (max-width: 1024px) {
+              font-size: 35px;
+            }
+            @media (max-width: 768px) {
+              font-size: 20px;
+            }
+            @media (max-width: 450px) {
+              font-size: 18px;
+            }
+          }
+          p{
+            font-size: 18px;
+            font-weight: 500;
+            color: #6b6b84;
+            line-height: 1.5;
+            width: 600px;
+            margin: 12px 0;
+            @media (max-width: 1024px) {
+              width: 500px;
+            }
+            @media (max-width: 768px) {
+              width: 100%;
+              font-weight: 400;
+            }
+            @media (max-width: 450px) {
+              font-size: 10px;
+            }
+          }
+        }
+      }
+      .carousel-cover{
+        flex: .45 1;
+        img{
+          border: 8px solid #fff;
+          border-radius: 50%;
+          width: 100%;
+          @media (max-width: 768px) {
+            width: 90%;
+          }
+        }
+      }
+    }
+  }
+}
+.carousel-control-prev, .carousel-control-next {
+  display: none;
+}
